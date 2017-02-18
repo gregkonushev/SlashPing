@@ -8,10 +8,5 @@ object Application extends Controller {
     Ok(views.html.index("Welcome to Ping Pong App!"))
   }
 
-  def ping = Action { Request =>
-    println(Request.body.asText)
-    Ok("I think your table is available right now")
-
-  }
 
 }
