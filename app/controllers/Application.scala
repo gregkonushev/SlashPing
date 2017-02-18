@@ -5,11 +5,12 @@ import play.api.mvc._
 object Application extends Controller {
 
   def index = Action {
-    Ok(views.html.index("Your new application is ready."))
+    Ok(views.html.index("Welcome to Ping Pong App!"))
   }
 
   def ping = Action { Request =>
-    Ok(s"I think you table is available right now ${Request.body.asText}")
+    println(Request.body.asText)
+    Ok("I think your table is available right now")
 
   }
 
