@@ -1,6 +1,5 @@
 package controllers
 
-import play.api._
 import play.api.mvc._
 
 object Application extends Controller {
@@ -9,8 +8,8 @@ object Application extends Controller {
     Ok(views.html.index("Your new application is ready."))
   }
 
-  def ping = Action { request =>
-    Ok("Got request [" + request + "]")
+  def ping = Action {
+    Ok("I think you table is available right now")
   }
 
 }
